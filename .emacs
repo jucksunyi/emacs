@@ -13,7 +13,14 @@
 (set-face-foreground 'secondary-selection "skyblue")
 (set-face-background 'secondary-selection "darkblue")
 
+(setq scroll-margin 3 scroll-conservatively 10000)
+;;防止页面滚动时跳动， scroll-margin 3
+;;可以在靠近屏幕边沿3行时就开始滚动，可以很好的看到上下文。
+
 ;;------------窗口界面设置结束-----------------
+
+;(global-set-key (kbd "M-g") 'goto-line)
+;;设置M-g为goto-line
 
 
 ;;;;;;made by sunyi
@@ -43,7 +50,7 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(default ((t (:family "DejaVu Sans" :foundry "PfEd" :slant normal :weight normal :height 158 :width normal)))))
+ '(default ((t (:family "DejaVu Sans" :foundry "PfEd" :slant normal :weight normal :height 200 :width normal)))))
 
 ;;; close startup message
 (setq inhibit-startup-message -1)
@@ -57,7 +64,7 @@
 (add-hook 'text-mode-hook 'turn-on-auto-fill)
 
 ;;; disable backup
-;;(setq make-backup-files)
+(setq make-backup-files nil)
 
 ;;; close auto save
 (setq auto-save-default -1)

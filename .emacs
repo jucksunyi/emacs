@@ -1,9 +1,9 @@
-
 ;;--------------窗口界面设置------------------
 (set-foreground-color "grey")
 (set-background-color "black")
 (set-cursor-color "gold1")
 (set-mouse-color "gold1")
+
 
 ;; 设置另外一些颜色：语法高亮显示的背景和主题，区域选择的背景和主题，二次选择的背景和选择
 (set-face-foreground 'highlight "white")
@@ -18,9 +18,6 @@
 ;;可以在靠近屏幕边沿3行时就开始滚动，可以很好的看到上下文。
 
 ;;------------窗口界面设置结束-----------------
-
-;(global-set-key (kbd "M-g") 'goto-line)
-;;设置M-g为goto-line
 
 
 ;;;;;;made by sunyi
